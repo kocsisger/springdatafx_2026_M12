@@ -32,4 +32,13 @@ public class SpringDataFxM12Application implements CommandLineRunner {
 
         personRepository.save(person);
     }
+
+    public void printData(){
+        System.out.println("Printing data...");
+    }
+
+    public Person getPerson(){
+        Person p = personRepository.findAll().get(0);
+        return p;
+    }
 }
