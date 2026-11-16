@@ -12,7 +12,8 @@ import java.time.LocalDate;
 @SpringBootApplication
 public class SpringDataFxM12Application implements CommandLineRunner {
     @Autowired
-    PersonRepository personRepository;
+    PersonRepository personRepository
+            ;
 
     public static void main(String[] args) {
         SpringApplication.run(SpringDataFxM12Application.class, args);
