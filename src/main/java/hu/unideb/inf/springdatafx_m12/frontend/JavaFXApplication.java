@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.springframework.boot.SpringApplication;
 
 public class JavaFXApplication extends Application {
     @Override
@@ -13,5 +14,7 @@ public class JavaFXApplication extends Application {
                 getClass().getResource("/fxml/MainPage.fxml"));
         stage.setScene(new Scene(root));
         stage.show();
+
+
     }
 }
